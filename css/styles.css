@@ -236,6 +236,14 @@ header {
   background-size: auto;
 }
 
+.title-customers {
+  padding-top: 120px;
+}
+
+.customers-button > .icon-first-customer {
+  background-position: center;
+}
+
 .contain {
   margin-bottom: 72px;
 }
