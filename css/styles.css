@@ -242,6 +242,13 @@ header {
 
 .customers-button > .icon-first-customer {
   background-position: center;
+  background-size: contain;
+}
+
+.social-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .contain {
@@ -358,10 +365,6 @@ header {
   padding-left: 0;
 }
 
-.social li {
-  margin-right: 24px;
-}
-
 .social li:last-child {
   margin-right: 0;
 }
@@ -400,7 +403,7 @@ header {
 
 .icon-first-customer {
   background-size: auto;
-  fill: #2e2f42;
+  fill: Solid rgba(255, 255, 255, 0.1);
 }
 
 .customers-list li:last-child {
@@ -438,6 +441,8 @@ header {
   color: var(--nice-color);
   letter-spacing: 0.02em;
   margin-right: 0;
+  width: 264px;
+  margin-right: 120px;
 }
 
 .web {
@@ -454,8 +459,28 @@ header {
 }
 
 .ended .container {
+  display: flex;
+
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  padding-left: 0;
+}
+
+.social .social-link {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.social .social-link:hover,
+.social .social-link:focus {
+  fill: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .photo-card {
