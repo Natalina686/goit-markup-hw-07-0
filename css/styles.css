@@ -505,3 +505,8 @@ header {
   border: 0.5px solid var(--nice-color);
   box-shadow: var(--brand-color) 8%;
 }
+
+.customers .customers-list .customers-button .icon-first-customer {
+  width: 59px;
+  height: 32px;
+}
