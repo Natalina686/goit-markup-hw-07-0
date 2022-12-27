@@ -185,7 +185,7 @@ body {
   position: absolute;
   /* display: block; */
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: var(--secondary-color);
   top: 50%;
   left: 50%;
@@ -240,7 +240,8 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 16px;
+
+  margin-top: 72px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--headings-text-color);
@@ -248,6 +249,7 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 .modal-form-input {
   height: 40px;
@@ -367,6 +369,7 @@ body {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
 .modal-form-submit:focus,
