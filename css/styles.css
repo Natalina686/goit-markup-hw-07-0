@@ -204,7 +204,7 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: E7E9FC;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   right: 24px;
   top: 24px;
@@ -427,7 +427,7 @@ body {
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   margin: -1px;
 }
