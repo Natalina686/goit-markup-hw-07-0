@@ -12,27 +12,27 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-
 </head>
 
 <body>
-  <header class="page-hader">
+  <header class="page-header">
     <div class="container main-container">
       <nav class="header">
         <a href="./index.html" class="studio"><span class="web">Web</span>Studio</a>
         <ul class="list site-nav">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link stick">Studio</a>
+            <a href="./index.html" class="nav-link stick"> Studio</a>
           </li>
           <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+            <a href="./portfolio.html" class="nav-link"> Portfolio</a>
           </li>
           <li class="nav-item">
             <a href="/" class="nav-link"> Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class=" auth-contact">
+
+      <ul class="auth-contact">
         <li class="nav-item">
           <a href="mailto:info@devstudio.com" class="Contact-link">info@devstudio.com</a>
         </li>
@@ -41,22 +41,87 @@
           <a href="tel:+11(000)1111111" class="Contact-link">+11 (000) 111-11-11</a>
         </li>
       </ul>
+      <button type="button" class="mobile-menu-burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-burger" width="32px" height="22px">
+          <use href="./images/sprate.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu-container">
+        <div class="mobile-menu-first">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/sprate.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav">
+            <li class="mobile-menu-item list">
+              <a href="" class="mobile-menu-link st-color-link link">Studio</a>
+            </li>
+            <li class="mobile-menu-item list">
+              <a href="" class="mobile-menu-link link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item list">
+              <a href="" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-second">
+          <ul class="mobile-contact-information">
+            <li class="mobile-contact-info-item list">
+              <a href="tel:+11(000)1111111" class="mobile-phone-number link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contact-info-item list">
+              <a href="mailto:info@devstudio.com" class="mobile-mail-adress link">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-media-list">
+            <li class="mobile-menu-media-item list">
+              <a href="" class="mobile-menu-media-link link">
+                <svg class="mobile-menu-media-list-icon" width="24" height="24">
+                  <use href="./images/sprate.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-media-item list">
+              <a href="" class="mobile-menu-media-link link">
+                <svg class="mobile-menu-media-list-icon" width="24" height="24">
+                  <use href="./images/sprate.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-media-item list">
+              <a href="" class="mobile-menu-media-link link">
+                <svg class="mobile-menu-media-list-icon" width="24" height="24">
+                  <use href="./images/sprate.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-media-item list">
+              <a href="" class="mobile-menu-media-link link">
+                <svg class="mobile-menu-media-list-icon" width="24" height="24">
+                  <use href="./images/sprate.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
   <main>
     <section class="hero">
-
       <div class="container">
-
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-
         <button type="button" class="button" data-modal-open>Order Service</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="button-close" data-modal-close>
               <svg class="close-icon">
                 <use href="./images/sprate.svg#icon-close">
-
                 </use>
               </svg>
             </button>
@@ -95,7 +160,7 @@
               </label>
               <label class="modal-form-field">
                 <span class="modal-input-desc">Comment</span>
-                <textarea name="user_massage" class="modal-form-massage" placeholder="Text input"></textarea>
+                <textarea name="user_message" class="modal-form-message" placeholder="Text input"></textarea>
               </label>
               <input id="user_policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden">
               <label for="user_policy" class="modal-form-check-deck">
@@ -180,13 +245,13 @@
         <h2 class="section-title-text">What are we doing</h2>
         <ul class="doing-item">
           <li class="doing-list list">
-            <img src="./images/monitor.jpg" alt="no foto" width="360">
+            <img srcset="./images/monitor2x.jpg 2x" src="./images/monitor.jpg" alt="no foto" width="360" />
           </li>
           <li class="doing-list list">
-            <img src="./images/telefone.jpg" alt="no foto" width="360">
+            <img srcset="./images/telefon2x.jpg 2x" src="./images/telefone.jpg" alt="no foto" width="360" />
           </li>
           <li class="doing-list list">
-            <img src="./images/working.jpg" alt="no foto" width="360">
+            <img srcset="./images/working2x.jpg 2x" src="./images/working.jpg" alt="no foto" width="360" />
           </li>
         </ul>
       </div>
@@ -194,205 +259,69 @@
     <section class="section our-team">
       <div class="container">
         <h2 class="section-title-text">Our Team</h2>
-        <ul class="team-item">
-          <li class="team-list">
-            <img src="./images/mark.jpg" alt="Mark Guerrero" width="264">
-            <div class="our-team-item">
-              <h3 class="section-title">Mark Guerrero</h3>
-              <p class="profession">Product Designer</p>
-              <ul class="our-team-ic">
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team-list">
-            <img src="./images/tom.jpg" alt="Tom Ford" width="264">
-            <div class="our-team-item">
-              <h3 class="section-title">Tom Ford</h3>
-              <p class="profession">Frontend Developer</p>
-              <ul class="our-team-ic">
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team-list">
-            <img src="./images/camila.jpg" alt="Camila Garcia" width="264">
-            <div class="our-team-item">
-              <h3 class="section-title">Camila Garcia</h3>
-              <p class="profession">Marketing</p>
-              <ul class="our-team-ic">
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team-list">
-            <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264">
-            <div class="our-team-item">
-              <h3 class="section-title">Daniel Wilson</h3>
-              <p class="profession">UI Designer</p>
-              <ul class="our-team-ic">
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-icon-list">
-                  <a href="" class="our-link-social">
-                    <svg class="our-icon">
-                      <use href="./images/sprate.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section-custom">
-      <h2 class="section-title-text">Customers</h2>
-      <ul class="customer">
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-ya"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-company"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-company_a"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-foster"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-brand"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customer-list">
-          <a href="" class="custom-list-icon">
-            <svg class="custom-icon">
-              <use href="./images/sprate.svg#icon-tagline"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
+        <section class="section section-work">
+          <div class="container">
+            <h2 class="section-title-text">What are we doing</h2>
+            <ul class="doing-item">
+              <li class="doing-list list">
+                <img srcset="./images/monitor2x.jpg 2x" src="./images/monitor.jpg" alt="no foto" width="360" />
+              </li>
+              <li class="doing-list list">
+                <img srcset="./images/telefon2x.jpg 2x" src="./images/telefone.jpg" alt="no foto" width="360" />
+              </li>
+              <li class="doing-list list">
+                <img srcset="./images/working2x.jpg 2x" src="./images/working.jpg" alt="no foto" width="360" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-custom">
+          <h2 class="section-title-text">Customers</h2>
+          <ul class="customer">
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-ya"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-company_a"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-foster"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-list">
+              <a href="" class="custom-list-icon">
+                <svg class="custom-icon">
+                  <use href="./images/sprate.svg#icon-tagline"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
   </main>
 
   <footer class="footer-color">
@@ -452,7 +381,11 @@
       </div>
     </div>
   </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
