@@ -176,9 +176,11 @@ body {
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   padding-top: 80px;
   padding-left: 40px;
+  height: 100%;
 }
 
 .mobile-menu-close-btn {
@@ -242,7 +244,7 @@ body {
   text-transform: capitalize;
   color: var(--activ-but-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 284px;
+  /* padding-top: 284px; */
 }
 
 .mobile-phone-number:active {
@@ -278,6 +280,8 @@ body {
 
 .mobile-menu-media-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px 56px;
   align-items: center;
   padding-bottom: 40px;
 }
@@ -304,7 +308,7 @@ body {
 }
 
 .mobile-menu-media-item:not(:last-child) {
-  margin-right: 56px;
+  /* margin-right: 56px; */
 }
 
 .st-color-link {
@@ -317,7 +321,11 @@ body {
   }
 
   .mobile-menu-media-item:not(:last-child) {
-    margin-right: auto;
+    /* margin-right: auto; */
+  }
+
+  .mobile-menu-media-list {
+    gap: 20px 13px;
   }
 }
 
@@ -447,7 +455,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 408px;
+  width: calc(100%-32px);
+  max-width: 408px;
   background-color: var(--secondary-color);
   top: 50%;
   left: 50%;
@@ -470,8 +479,8 @@ body {
 
 @media screen and (max-width: 427px) {
   .modal {
-    width: 310px;
-    height: auto;
+    /* width: 310px;
+    height: auto; */
   }
 }
 
@@ -557,7 +566,7 @@ body {
   color: #8e8f99;
 }
 
-.modal-form-massage {
+.modal-form-message {
   display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -570,7 +579,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-massage:focus {
+.modal-form-message:focus {
   outline: none;
   border-color: rgba(77, 90, 229, 1);
 }
@@ -603,7 +612,7 @@ body {
 }
 
 .modal-form-check-deck {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   font-weight: 400;
   font-size: 12px;
@@ -624,7 +633,7 @@ body {
 
 .modal-form-check-deck::before {
   content: "";
-  display: block;
+  display: inline-block;
   border: solid 1.25px rgba(46, 47, 66, 1);
   border-radius: 2px;
   cursor: pointer;
@@ -633,6 +642,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 8px;
+  vertical-align: middle;
 }
 
 .modal-form-check:checked + .modal-form-check-deck::before {
