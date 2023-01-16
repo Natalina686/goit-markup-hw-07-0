@@ -455,7 +455,7 @@ body {
 
 .modal {
   position: absolute;
-  width: calc(100%-32px);
+  width: calc(100% - 32px);
   max-width: 408px;
   background-color: var(--secondary-color);
   top: 50%;
